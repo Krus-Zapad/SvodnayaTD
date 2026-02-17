@@ -109,7 +109,7 @@ Public Class Raspr_Step2
         If rmoLinks.ContainsKey(currentNode) Then
             For Each nextNode In rmoLinks(currentNode)
                 ' Если следующий узел начинается с JB (или содержит JB в названии)
-                If nextNode.Contains("JB") OrElse nextNode.Contains("ЯБ") Then
+                If nextNode.Contains("JB") Then
                     Dim jbKey = shs & "|" & nextNode
                     If Not processedJB.Contains(jbKey) Then
                         result.Add(New JBRef With {

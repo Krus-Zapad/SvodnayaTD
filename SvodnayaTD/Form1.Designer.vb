@@ -49,11 +49,18 @@ Partial Class frmTD_SHP
         Me.f_tb_Messages = New System.Windows.Forms.TextBox()
         Me.f_b_Create = New System.Windows.Forms.Button()
         Me.f_tb_OutPath = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.f_tb_KoordsPath = New System.Windows.Forms.TextBox()
+        Me.f_b_Koords_Path = New System.Windows.Forms.Button()
+        Me.f_cb_Koords_Sheets = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox4
@@ -66,7 +73,7 @@ Partial Class frmTD_SHP
         Me.GroupBox4.Controls.Add(Me.Label8)
         Me.GroupBox4.Controls.Add(Me.Label9)
         Me.GroupBox4.Controls.Add(Me.f_tb_JB)
-        Me.GroupBox4.Location = New System.Drawing.Point(12, 333)
+        Me.GroupBox4.Location = New System.Drawing.Point(12, 381)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(767, 74)
         Me.GroupBox4.TabIndex = 1025
@@ -163,9 +170,9 @@ Partial Class frmTD_SHP
         Me.GroupBox3.Controls.Add(Me.f_b_Raspr_Path)
         Me.GroupBox3.Controls.Add(Me.f_cb_Raspr_Sheets)
         Me.GroupBox3.Controls.Add(Me.Label1)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 226)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 195)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(767, 101)
+        Me.GroupBox3.Size = New System.Drawing.Size(767, 87)
         Me.GroupBox3.TabIndex = 1024
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Распределение"
@@ -194,7 +201,7 @@ Partial Class frmTD_SHP
         Me.f_cb_Raspr_Sheets.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.f_cb_Raspr_Sheets.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.f_cb_Raspr_Sheets.FormattingEnabled = True
-        Me.f_cb_Raspr_Sheets.Location = New System.Drawing.Point(9, 68)
+        Me.f_cb_Raspr_Sheets.Location = New System.Drawing.Point(8, 58)
         Me.f_cb_Raspr_Sheets.Name = "f_cb_Raspr_Sheets"
         Me.f_cb_Raspr_Sheets.Size = New System.Drawing.Size(288, 21)
         Me.f_cb_Raspr_Sheets.TabIndex = 1001
@@ -203,7 +210,7 @@ Partial Class frmTD_SHP
         '
         Me.Label1.AutoSize = True
         Me.Label1.Enabled = False
-        Me.Label1.Location = New System.Drawing.Point(6, 52)
+        Me.Label1.Location = New System.Drawing.Point(5, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(32, 13)
         Me.Label1.TabIndex = 1002
@@ -215,9 +222,9 @@ Partial Class frmTD_SHP
         Me.GroupBox2.Controls.Add(Me.f_b_KJ_Path)
         Me.GroupBox2.Controls.Add(Me.f_cb_KJ_Sheets)
         Me.GroupBox2.Controls.Add(Me.Label11)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 119)
+        Me.GroupBox2.Location = New System.Drawing.Point(11, 104)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(767, 101)
+        Me.GroupBox2.Size = New System.Drawing.Size(767, 85)
         Me.GroupBox2.TabIndex = 1023
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "КЖ"
@@ -246,7 +253,7 @@ Partial Class frmTD_SHP
         Me.f_cb_KJ_Sheets.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.f_cb_KJ_Sheets.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.f_cb_KJ_Sheets.FormattingEnabled = True
-        Me.f_cb_KJ_Sheets.Location = New System.Drawing.Point(9, 68)
+        Me.f_cb_KJ_Sheets.Location = New System.Drawing.Point(9, 58)
         Me.f_cb_KJ_Sheets.Name = "f_cb_KJ_Sheets"
         Me.f_cb_KJ_Sheets.Size = New System.Drawing.Size(288, 21)
         Me.f_cb_KJ_Sheets.TabIndex = 1001
@@ -255,7 +262,7 @@ Partial Class frmTD_SHP
         '
         Me.Label11.AutoSize = True
         Me.Label11.Enabled = False
-        Me.Label11.Location = New System.Drawing.Point(6, 52)
+        Me.Label11.Location = New System.Drawing.Point(6, 42)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(32, 13)
         Me.Label11.TabIndex = 1002
@@ -269,7 +276,7 @@ Partial Class frmTD_SHP
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(767, 101)
+        Me.GroupBox1.Size = New System.Drawing.Size(767, 86)
         Me.GroupBox1.TabIndex = 1022
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Лайнлист"
@@ -298,7 +305,7 @@ Partial Class frmTD_SHP
         Me.f_cb_LL_Sheets.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.f_cb_LL_Sheets.ForeColor = System.Drawing.SystemColors.MenuHighlight
         Me.f_cb_LL_Sheets.FormattingEnabled = True
-        Me.f_cb_LL_Sheets.Location = New System.Drawing.Point(9, 68)
+        Me.f_cb_LL_Sheets.Location = New System.Drawing.Point(9, 58)
         Me.f_cb_LL_Sheets.Name = "f_cb_LL_Sheets"
         Me.f_cb_LL_Sheets.Size = New System.Drawing.Size(288, 21)
         Me.f_cb_LL_Sheets.TabIndex = 1001
@@ -307,7 +314,7 @@ Partial Class frmTD_SHP
         '
         Me.Label3.AutoSize = True
         Me.Label3.Enabled = False
-        Me.Label3.Location = New System.Drawing.Point(6, 52)
+        Me.Label3.Location = New System.Drawing.Point(6, 42)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(32, 13)
         Me.Label3.TabIndex = 1002
@@ -316,21 +323,21 @@ Partial Class frmTD_SHP
         'f_tb_Messages
         '
         Me.f_tb_Messages.Enabled = False
-        Me.f_tb_Messages.Location = New System.Drawing.Point(12, 455)
+        Me.f_tb_Messages.Location = New System.Drawing.Point(12, 519)
         Me.f_tb_Messages.Multiline = True
         Me.f_tb_Messages.Name = "f_tb_Messages"
         Me.f_tb_Messages.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.f_tb_Messages.Size = New System.Drawing.Size(767, 185)
+        Me.f_tb_Messages.Size = New System.Drawing.Size(767, 109)
         Me.f_tb_Messages.TabIndex = 1021
         Me.f_tb_Messages.TabStop = False
         '
         'f_b_Create
         '
-        Me.f_b_Create.Location = New System.Drawing.Point(680, 427)
+        Me.f_b_Create.Location = New System.Drawing.Point(677, 17)
         Me.f_b_Create.Name = "f_b_Create"
-        Me.f_b_Create.Size = New System.Drawing.Size(99, 23)
+        Me.f_b_Create.Size = New System.Drawing.Size(74, 23)
         Me.f_b_Create.TabIndex = 1020
-        Me.f_b_Create.Text = "Сформировать"
+        Me.f_b_Create.Text = "Запуск"
         Me.f_b_Create.UseVisualStyleBackColor = True
         '
         'f_tb_OutPath
@@ -338,34 +345,86 @@ Partial Class frmTD_SHP
         Me.f_tb_OutPath.AllowDrop = True
         Me.f_tb_OutPath.BackColor = System.Drawing.SystemColors.Window
         Me.f_tb_OutPath.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.f_tb_OutPath.Location = New System.Drawing.Point(12, 429)
+        Me.f_tb_OutPath.Location = New System.Drawing.Point(9, 19)
         Me.f_tb_OutPath.Name = "f_tb_OutPath"
-        Me.f_tb_OutPath.Size = New System.Drawing.Size(662, 20)
+        Me.f_tb_OutPath.Size = New System.Drawing.Size(661, 20)
         Me.f_tb_OutPath.TabIndex = 1026
         '
-        'Label2
+        'GroupBox5
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Enabled = False
-        Me.Label2.Location = New System.Drawing.Point(18, 413)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(133, 13)
-        Me.Label2.TabIndex = 1003
-        Me.Label2.Text = "Путь к выходному файлу"
+        Me.GroupBox5.Controls.Add(Me.f_tb_KoordsPath)
+        Me.GroupBox5.Controls.Add(Me.f_b_Koords_Path)
+        Me.GroupBox5.Controls.Add(Me.f_cb_Koords_Sheets)
+        Me.GroupBox5.Controls.Add(Me.Label4)
+        Me.GroupBox5.Location = New System.Drawing.Point(11, 288)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(767, 87)
+        Me.GroupBox5.TabIndex = 1027
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Координаты"
+        '
+        'f_tb_KoordsPath
+        '
+        Me.f_tb_KoordsPath.AllowDrop = True
+        Me.f_tb_KoordsPath.BackColor = System.Drawing.SystemColors.Window
+        Me.f_tb_KoordsPath.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.f_tb_KoordsPath.Location = New System.Drawing.Point(9, 19)
+        Me.f_tb_KoordsPath.Name = "f_tb_KoordsPath"
+        Me.f_tb_KoordsPath.Size = New System.Drawing.Size(662, 20)
+        Me.f_tb_KoordsPath.TabIndex = 10
+        '
+        'f_b_Koords_Path
+        '
+        Me.f_b_Koords_Path.Location = New System.Drawing.Point(677, 17)
+        Me.f_b_Koords_Path.Name = "f_b_Koords_Path"
+        Me.f_b_Koords_Path.Size = New System.Drawing.Size(75, 23)
+        Me.f_b_Koords_Path.TabIndex = 11
+        Me.f_b_Koords_Path.Text = "Обзор"
+        Me.f_b_Koords_Path.UseVisualStyleBackColor = True
+        '
+        'f_cb_Koords_Sheets
+        '
+        Me.f_cb_Koords_Sheets.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.f_cb_Koords_Sheets.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.f_cb_Koords_Sheets.FormattingEnabled = True
+        Me.f_cb_Koords_Sheets.Location = New System.Drawing.Point(8, 58)
+        Me.f_cb_Koords_Sheets.Name = "f_cb_Koords_Sheets"
+        Me.f_cb_Koords_Sheets.Size = New System.Drawing.Size(288, 21)
+        Me.f_cb_Koords_Sheets.TabIndex = 1001
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Enabled = False
+        Me.Label4.Location = New System.Drawing.Point(5, 42)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(32, 13)
+        Me.Label4.TabIndex = 1002
+        Me.Label4.Text = "Лист"
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.Controls.Add(Me.f_tb_OutPath)
+        Me.GroupBox6.Controls.Add(Me.f_b_Create)
+        Me.GroupBox6.Location = New System.Drawing.Point(12, 461)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(767, 52)
+        Me.GroupBox6.TabIndex = 1028
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "Путь к выходному файлу"
         '
         'frmTD_SHP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(790, 657)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.f_tb_OutPath)
+        Me.ClientSize = New System.Drawing.Size(790, 637)
+        Me.Controls.Add(Me.GroupBox6)
+        Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.f_tb_Messages)
-        Me.Controls.Add(Me.f_b_Create)
         Me.Name = "frmTD_SHP"
         Me.Text = "Form1"
         Me.GroupBox4.ResumeLayout(False)
@@ -376,6 +435,10 @@ Partial Class frmTD_SHP
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -408,5 +471,10 @@ Partial Class frmTD_SHP
     Friend WithEvents f_tb_Messages As TextBox
     Friend WithEvents f_b_Create As Button
     Friend WithEvents f_tb_OutPath As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents f_tb_KoordsPath As TextBox
+    Friend WithEvents f_b_Koords_Path As Button
+    Friend WithEvents f_cb_Koords_Sheets As ComboBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents GroupBox6 As GroupBox
 End Class

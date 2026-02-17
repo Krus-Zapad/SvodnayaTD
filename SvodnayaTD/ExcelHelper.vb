@@ -11,10 +11,10 @@ Public Module ExcelHelper
             Dim addr = ws.MergedCells(r, c)
             If addr IsNot Nothing Then
                 Dim spl = Split(addr, ":")
-                val = ws.Cells(spl(LBound(spl))).Value
+                val = Replace(ws.Cells(spl(LBound(spl))).Value, "JBк", "JB")
             End If
         Else
-            val = cell.Value
+            val = Replace(cell.Value, "JBк", "JB")
         End If
 
         If val Is Nothing Then Return ""

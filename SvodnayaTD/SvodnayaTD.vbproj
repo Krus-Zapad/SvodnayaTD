@@ -114,8 +114,8 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Koords_Step4.vb" />
     <Compile Include="LineList_Step3.vb" />
-    <Compile Include="MainCore.vb" />
     <Compile Include="Models.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
